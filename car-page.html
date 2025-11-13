@@ -221,103 +221,162 @@
 
                     <!-- Page Heading -->
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                        <h1 class="h3 mb-0 text-gray-800">Список Клієнтів</h1>
-                        <div class="float-right">   
-                            <a href="#" class="btn btn-warning btn-icon-split">
-                                <span class="text">Редагувати</span>
-                                <span class="icon text-white-50">
-                                    <i class="fas fa-edit"></i>
-                                </span>
-                            </a>
-                            <a href="#" class="btn btn-danger btn-icon-split">
-                                <span class="text">Видалити</span>
-                                <span class="icon text-white-50">
-                                    <i class="fas fa-trash"></i>
-                                </span>
-                            </a>                        
-                        </div>
+                        <h1 class="h3 mb-0 text-gray-800">Детальна нформація про авто</h1>
                     </div>
-
-                    <!-- Content Row -->
-                    <div class="row">
+                    <div class="row d-flex">
                         <div class="col-lg-6">
-                            <div class="container-fluid">        
-                                <div class="card shadow mb-4">
-                                    <div class="card-header py-3">
-                                        <h6 class="m-0 font-weight-bold text-primary">Toyota Camry XV40</h6>
-                                    </div>
-                                    <div class="card-body">
-                                        <div class="row"><img src="img/no-car-img.jpg" class="mx-auto img-fluid" alt="..."></div>
-
-                                        <div class="row">
-                                            <ul class="list-group list-group-flush">
-                                                <li class="list-group-item"><p>Марка авто : <strong>Toyota Camry XV40</strong></p></li>
-                                                <li class="list-group-item"><p>VIN : <strong>1FTFW1CT3EFB83953</strong></p></li>
-                                                <li class="list-group-item"><p>Номер авто : <strong>АА1922АА</strong></p></li>
-                                                <li class="list-group-item"><p>Власник : <strong>Артусов Сергій Михайлович(<span style="color: #3366ff;">ID1922</span>)</strong></p></li>
-                                              </ul>
-                                        </div> 
+                            <!-- Basic Card Example -->
+                            <div class="card shadow mb-4 h-100">
+                                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                                    <h6 class="m-0 font-weight-bold text-primary">Toyota Camry 40</h6>
+                                </div>
+                                <img src="img/no-car-img.jpg" class="mt-3 mx-auto w-50" alt="...">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item"><p>Марка авто : <strong>Toyota Camry XV40</strong></p></li>
+                                    <li class="list-group-item"><p>VIN : <strong>1FTFW1CT3EFB83953</strong></p></li>
+                                    <li class="list-group-item"><p>Номер авто : <strong>АА1922АА</strong></p></li>
+                                    <li class="list-group-item"><p>Власник : <strong>Артусов Сергій Михайлович(<span style="color: #3366ff;">ID1922</span>)</strong></p></li>
+                                  </ul>
+                                <div class="card-body">
+                                    <div class="float-right">
+                                    <a href="#" class="btn btn-warning btn-icon-split">
+                                        <span class="text">Редагувати</span>
+                                        <span class="icon text-white-50">
+                                            <i class="fas fa-edit"></i>
+                                        </span>
+                                    </a>
+                                    <a href="#" class="btn btn-danger btn-icon-split">
+                                        <span class="text">Видалити</span>
+                                        <span class="icon text-white-50">
+                                            <i class="fas fa-trash"></i>
+                                        </span>
+                                    </a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-6">
-                            <div class="container-fluid">        
-                                <div class="card shadow mb-4">
-                                    <div class="card-header py-3">
-                                        <h6 class="m-0 font-weight-bold text-primary">Нотатки</h6>
-                                        <div class="float-right">                           
-                                            <a href="#" class="btn btn-success btn-icon-split">
-                                            <span class="text">Додади нотатку</span>
-                                            <span class="icon text-white-75">
-                                                <i class="fas fa-plus"></i>
-                                            </span>
+                            <!-- Basic Card Example -->
+                            <div class="card shadow mb-4 h-100">
+                                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                                    <h6 class="m-0 font-weight-bold text-primary">Нотатки</h6>
+                                    <a href="#" class="btn-sm btn-success btn-icon-split">
+                                        <span class="text">Додади нотатку</span>
+                                        <span class="icon text-white-75">
+                                            <i class="fas fa-plus"></i>
+                                        </span>
+                                        </a>
+                                </div>
+                                <div class="table-responsive">
+                                    <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                                        <tbody>
+                                            <tr>
+                                                <td>Впускний коллектор стоїть від обьєму 3.5</td>
+                                                <td>
+                                                    <a href="#" class="btn btn-warning btn-icon-split">
+                                                        <span class="icon text-white-50">
+                                                            <i class="fas fa-edit"></i>
+                                                        </span>
+                                                    </a>
+                                                    <a href="#" class="btn btn-danger btn-icon-split">
+                                                        <span class="icon text-white-50">
+                                                            <i class="fas fa-trash"></i>
+                                                        </span>
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Встановлено гальмівну систему від Highlander, при замовленні гальмівних колодок звернути на це увагу!!!</td>
+                                                <td>
+                                                    <a href="#" class="btn btn-warning btn-icon-split">
+                                                        <span class="icon text-white-50">
+                                                            <i class="fas fa-edit"></i>
+                                                        </span>
+                                                    </a>
+                                                    <a href="#" class="btn btn-danger btn-icon-split">
+                                                        <span class="icon text-white-50">
+                                                            <i class="fas fa-trash"></i>
+                                                        </span>
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card shadow mb-4">
+                        <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                            <h6 class="m-0 font-weight-bold text-primary">Список виконаних робіт</h6>
+                            <a href="#" class="btn-sm btn-success btn-icon-split">
+                                <span class="text">Додати проведену роботу</span>
+                                <span class="icon text-white-75">
+                                    <i class="fas fa-plus"></i>
+                                </span>
+                                </a>
+                        </div>
+                        <div class="table-responsive">
+                            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                                <thead>
+                                    <tr>
+                                        <th>Найменування робіт</th>
+                                        <th>Які запчастини було встановлено та їхні номери</th>
+                                        <th>Вартість робіт</th>
+                                        <th>Дата првоедення робіт</th>
+                                        <th>Керування</th>
+                                    </tr>
+                                </thead>
+                                <tfoot>
+                                    <tr>
+                                        <th>Найменування робіт</th>
+                                        <th>Які запчастини було встановлено та їхні номери</th>
+                                        <th>Вартість робіт</th>
+                                        <th>Дата првоедення робіт</th>
+                                        <th>Керування</th>
+                                    </tr>
+                                </tfoot>
+                                <tbody>
+                                    <tr>
+                                        <td>Заміна мастила та філтрів, Ремонт проводки на ближнє світло</td>
+                                        <td>Мастило моторне 10W40, Фільтра, Кабель та розьєм лампочки</td>
+                                        <td>8500<strong>UAH</strong></td>
+                                        <td><strong>12.12.2025</strong></td>
+                                        <td>
+                                            <a href="#" class="btn btn-warning btn-icon-split">
+                                                <span class="icon text-white-50">
+                                                    <i class="fas fa-edit"></i>
+                                                </span>
                                             </a>
-                                        </div>
-                                    </div>
-                                    <div class="card-body">
-                                        <div class="table-responsive">
-                                            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-                                                <tbody>
-                                                    <tr>
-                                                        <td>Впускний коллектор стоїть від обьєму 3.5</td>
-                                                        <td>
-                                                            <a href="#" class="btn btn-warning btn-icon-split">
-                                                                <span class="icon text-white-50">
-                                                                    <i class="fas fa-edit"></i>
-                                                                </span>
-                                                            </a>
-                                                            <a href="#" class="btn btn-danger btn-icon-split">
-                                                                <span class="icon text-white-50">
-                                                                    <i class="fas fa-trash"></i>
-                                                                </span>
-                                                            </a>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Встановлено гальмівну систему від Highlander, при замовленні гальмівних колодок звернути на це увагу!!!</td>
-                                                        <td>
-                                                            <a href="#" class="btn btn-warning btn-icon-split">
-                                                                <span class="icon text-white-50">
-                                                                    <i class="fas fa-edit"></i>
-                                                                </span>
-                                                            </a>
-                                                            <a href="#" class="btn btn-danger btn-icon-split">
-                                                                <span class="icon text-white-50">
-                                                                    <i class="fas fa-trash"></i>
-                                                                </span>
-                                                            </a>
-                                                        </td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                                            <a href="#" class="btn btn-danger btn-icon-split">
+                                                <span class="icon text-white-50">
+                                                    <i class="fas fa-trash"></i>
+                                                </span>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Перепакова фари, Заміна лампочки</td>
+                                        <td>Лампочка</td>
+                                        <td>5000<strong>UAH</strong></td>
+                                        <td><strong>10.12.2025</strong></td>
+                                        <td>
+                                            <a href="#" class="btn btn-warning btn-icon-split">
+                                                <span class="icon text-white-50">
+                                                    <i class="fas fa-edit"></i>
+                                                </span>
+                                            </a>
+                                            <a href="#" class="btn btn-danger btn-icon-split">
+                                                <span class="icon text-white-50">
+                                                    <i class="fas fa-trash"></i>
+                                                </span>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
                     </div>
-
                 </div>
                 <!-- /.container-fluid -->
 
